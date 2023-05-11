@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojonary</title>
+    <script src="./Dalrymple_Sam_Button_Clicker.js"></script>
+    <link rel="stylesheet" href="./Dalrymple_Sam_Button_Clicker.css">
+</head>
+<body>
+    <div class="navbar">Dojonary <input onclick="search()" id="search-bar" type="search" value="Search"> <button onclick="login()" id="login-btn">Login</button></div>
+    <div class="column-left">
+        <div class="definition-block1">
+            <div class="def-block1-column1">
+                <section>
+                    <p class="def-block1-title">Ninja</p>
+                    <i>noun</i>
+                    <p>Plural: <i>ninjas</i></p>
+                    <button onclick="like1()" id="like-btn1">13 Likes</button>
+                </section>
+            </div>
+            <div class="def-block1-column2">
+                <section>
+                    <p>A pracitioner skilled in the</p>
+                    <p><a href="#">Japanese</a> art of <a href="#">ninjustsu</a></p>
+                </section>
+            </div>
+        </div>
+
+        <div class="definition-block2">
+            <div class="def-block2-column1">
+                <section>
+                    <p class="def-block2-title">Ninja</p>
+                    <p><i>noun</i></p>
+                    <p>Plural: <i>ninjas</i></p>
+                    <button onclick="like2()" id="like-btn2">37 Likes</button>
+                </section>
+            </div>
+            <div class="def-block2-column2">
+                <p>A <a href="#">programmer</a> who breaks</p>
+                <p>down problems with <a href="#">zen</a>-like</p>
+                <p>focus</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column-right">
+        <div class="defined-by-you-block">
+            <p>Dojonary is</p>
+            <p>defined by <b>YOU</b></p>
+            <button onclick="addDefinition()" id="add-definition-btn"><b>Add Definition</b></button>
+        </div>
+    </div>
+
+</body>
+</html>

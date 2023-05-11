@@ -1,0 +1,128 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    background-color: gainsboro;
+    display: flex;
+    justify-content: space-evenly;
+    height: 40px;
+    align-items: center;
+    margin: 50px;
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#login-btn{
+    background-color: rgb(34, 19, 167);
+    color: white;
+    padding: 5px;
+    box-shadow: 2px 2px black;
+}
+
+.column-left{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    float: left;
+}
+
+.column-right{
+    display: flex;
+    justify-content: left;
+    width: 45%;
+    float: right;
+}
+
+.definition-block1{
+    margin: 50px;
+    border: solid black;
+    width: 400px;
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.def-block1-title{
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.def-block1-column1{
+    margin: 10px;
+    width: 30%;
+}
+
+.def-block1-column2{
+    margin: 30px;
+    width: 70%;
+}
+
+#like-btn1{
+    border: solid black 2px;
+    background-color: yellow;
+    box-shadow: 2px 2px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.definition-block2{
+    margin: 50px;
+    border: solid black;
+    width: 400px;
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+        top: 180px;
+}
+
+.def-block2-title{
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.def-block2-column1{
+    margin: 10px;
+    width: 30%;
+}
+
+#like-btn2{
+    border: solid black 2px;
+    background-color: yellow;
+    box-shadow: 2px 2px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.def-block2-column2{
+    margin: 30px;
+    width: 70%;
+}
+
+.defined-by-you-block{
+    border: solid black;
+    border-radius: 5px;
+    width: 200px;
+    margin: 50px;
+    padding: 20px;
+}
+
+#add-definition-btn{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 5px;
+    width: 150px;
+    background-color: lightgreen;
+    border: solid 2px black;
+    box-shadow: 2px 2px;
+}

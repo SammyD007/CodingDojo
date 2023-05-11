@@ -1,0 +1,36 @@
+.user-card{
+    position: absolute;
+    width: 40%;
+    margin: 40px auto 40px;
+    border: solid 2px rgb(138, 138, 138);
+    box-shadow: 4px;
+    border-radius: 2px;
+}
+
+.user-card h2{
+    margin-bottom: 10px;
+}
+
+.user-card p{
+    margin: 2px;
+}
+
+.user-card aside{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.user-card section{
+    margin: 20px;
+}
+
+.profile-picture{
+    border: solid grey;
+    border-radius: 52px;
+}
+
+.top-bar{
+    border: solid 40px;
+    border-color: cyan;
+    margin-bottom: -60px;
+}

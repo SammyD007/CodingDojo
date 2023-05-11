@@ -1,0 +1,189 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgb(70, 70, 70);
+    color: white;
+}
+
+.navbar-title{
+    margin-right: 90px;
+    font-size: 50px;
+}
+
+.nav-links li{
+    margin-right: 100px;
+    list-style: none;
+    display: inline-block;
+    align-items: center;
+}
+
+.nav-links a{
+    color: white;
+    font-size: 20px;
+}
+
+/* this has got to be the wrong way to do this... */
+.btn {
+    margin-left: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    height: 30px;
+    width: 70px;
+}
+
+.page-layout{
+    columns: 2;
+}
+
+.column-1{
+    width: 50%;
+    height: 1000px;
+    float: left;
+}
+
+.column-2{
+    width: 50%;
+    height: 1000px;
+    float: right;
+}
+
+.user-card{
+    width: 70%;
+    margin: 30px 200px;
+    border: solid 2px grey;
+    box-shadow: 1px 1px;
+}
+
+.top-bar{
+    border: solid 30px cyan;
+}
+
+.profile-picture{
+    border: solid 1px grey;
+    border-radius: 100%;
+    margin: -50px 0px 0px 0px;
+}
+
+.user-card-content {
+    margin: 10px;
+}
+
+.user-card-content p{
+    margin: 5px;
+}
+
+.user-card-content a{
+    margin: 0px 7px;
+}
+
+.education-card{
+    width: 70%;
+    margin: 30px 200px;
+    border: solid 2px grey;
+    box-shadow: 1px 1px;
+}
+
+.ed-top-bar{
+    background-color: grey;
+    color: white;
+    font-size: 20px;
+}
+
+.school{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.timeframe{
+    font-size: 16px;
+    color: gray;
+}
+
+.connection-requests-card{
+    float: right;
+    margin: 50px 40px 0px 0px;
+    width: 60%;
+    border: solid 2px grey;
+}
+
+.connection-requests-top-bar{
+    height: 30px;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgb(17, 17, 17);
+}
+
+.connection-requests-top-bar a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 24px;
+    font-size: 22px;
+    border: solid 1px;
+    border-radius: 100%;
+    margin: 0px 5px 0px 5px;
+    border-color: rgb(117, 117, 117);
+    background-color: rgb(117, 117, 117);
+}
+
+.connection-request-card-content{
+    padding: 10px;
+}
+
+.your-connections-card{
+    float: right;
+    margin: 30px 40px 0px 0px;
+    width: 60%;
+    border: solid 2px grey;
+}
+
+.your-connections-top-bar{
+    height: 30px;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgb(17, 17, 17);
+}
+
+.your-connections-top-bar a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 60px;
+    font-size: 22px;
+    border: solid 1px;
+    border-radius: 100%;
+    margin: 0px 5px 0px 5px;
+    border-color: rgb(117, 117, 117);
+    background-color: rgb(117, 117, 117);
+}
+
+.your-connections-card-content{
+    padding: 10px;
+}
+
+.column-2 img {
+    border: solid 1px grey;
+    border-radius: 100%;
+}
+
+.view-more-card{
+    border-top: solid 2px grey;
+}

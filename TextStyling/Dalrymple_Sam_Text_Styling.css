@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    background-color: black;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+h1 span{
+    color: cyan;
+}
+
+h2{
+    font-style: italic;
+    color: white;
+    background-color: purple;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+h3{
+    background-color: cyan;
+    columns: blue;
+    display: flex;
+    justify-content: right;
+    margin: 10px;
+    padding: 10px;
+}

@@ -1,0 +1,40 @@
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5px;
+    align-items: center;
+}
+
+.col{
+    display: flex;
+    margin: 5px;
+    justify-content: left;
+    padding-left: 5px;
+    align-items: center;
+    background-color: rgb(44, 184, 184);
+    width: 200px;
+    height: 40px;
+}
+
+.col-2{
+    display: flex;
+    justify-content: left;
+    background-color: rgb(44, 184, 184);
+    justify-content: left;
+    padding-left: 5px;
+    align-items: center;
+    width: 400px;
+    height: 40px;
+}
+
+.col-3{
+    display: flex;
+    justify-content: left;
+    background-color: rgb(44, 184, 184);
+    justify-content: left;
+    padding-left: 5px;
+    align-items: center;
+    margin: 5px;
+    width: 600px;
+    height: 40px;
+}

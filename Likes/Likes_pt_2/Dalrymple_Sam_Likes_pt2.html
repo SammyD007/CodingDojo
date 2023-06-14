@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Dalrymple_Sam_Likes_pt2.css">
+    <script src="./Dalrymple_Sam_Likes_pt2.js"></script>
+    <title>Likes Part Two</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>Network</h1>
+    </nav>
+    <header class="head">Your Feed</header>
+    <div class="row">
+        <div class="column-left">
+            <div class="avatar-card">
+                <img class="prof-pic-blank" src="./blankProfPic.png">
+                <div class="avatar-card-content">
+                    <a href="#">Add an avatar</a>
+                    <h3>James Doe</h3>
+                </div>
+            </div>
+        </div>
+        <div class="column-right">
+            <div class="user-profile-card">
+                <div class="user-profile-card-top-row">
+                    <p class="prof-card-name">Neil M</p>
+                        <section class="likes-display">
+                            <!-- &nbsp; is the only thing I could think of given the layout here, probably
+                            could have done something cleaner if I did a different layotu of the items and classes
+                            not really sure atm but nbsp works here (non-breaking-space) -->
+                        <p class="likes-counter1">9</p> &nbsp; <p>like(s)</p>
+                        </section>
+                        <button onclick="addLike1()" class="like-button">Like</button>
+                </div>
+                <section class="filler">
+                    <p>I just set up this new discorb bot, let me know what you all think. <a href="#">link</a></p>
+                </section>
+            </div>
+
+            <div class="user-profile-card">
+                <div class="user-profile-card-top-row">
+                    <p class="prof-card-name">Nichole K</p>
+                        <section class="likes-display">
+                        <p class="likes-counter2">12</p> &nbsp; <p>like(s)</p>
+                        </section>
+                        <button onclick="addLike2()" class="like-button">Like</button>
+                </div>
+                <section class="filler">
+                    <p>Just finished my <a href="#">next comic</a>, check it out</p>
+                </section>
+            </div>
+
+            <div class="user-profile-card">
+                <div class="user-profile-card-top-row">
+                    <p class="prof-card-name">Jim R</p>
+                        <section class="likes-display">
+                        <p class="likes-counter3">9</p> &nbsp; <p>like(s)</p>
+                        </section>
+                        <button onclick="addLike3()" class="like-button">Like</button>
+                </div>
+                <section class="filler">I can't stop listening to the &nbsp; <a href="#">new album</a>. Who else likes it?</section>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

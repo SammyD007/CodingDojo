@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    display: flex;
+    border: solid 2px black;
+    margin: 20px;
+    padding: 20px;
+    width: 25%;
+}
+
+.left-align{
+    display: inline-block;
+    justify-content: left;
+}
+
+.left align p{
+    margin-top: 5px;
+}
+
+.likes{
+    display: flex;
+    align-items: center;
+    width: 20%;
+    margin: 10px;
+    padding: 5px;
+}
+
+/* This could probably be done a better way but for rn it works ig */
+.likes-counter{
+    margin: 0px 5px 0px 0px;
+}
+
+.like-button{
+    margin: 5px;
+    padding: 5px 10px 5px 10px;
+    background-color: yellow;
+    border: solid black 3px;
+
+    box-shadow: 2px 2px;
+}

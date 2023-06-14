@@ -1,0 +1,48 @@
+/* made the "all" background grey so that the 
+third block being white would be noticeable */
+*{
+    background-color: silver;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+.container1{
+    width: auto;
+    background-color: cyan;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container2{
+    width: auto;
+    background-color: pink;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container3{
+    width: auto;
+    background-color: white;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+/* This is so that the background on these looks less out of place
+the background for all being set to grey mad a few of the images 
+"negative space" grey so I set it to white here to make it look less
+out of place */
+img{
+    background-color: white;
+}
+
+footer{
+    text-align: center;
+    font-size: 15px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        .container {
+            justify-content: center;
+            width: 20%;
+        }
+
+        .container h1{
+            display: flex;
+            justify-content: center;
+        }
+
+        .container h3{
+            display: flex;
+            justify-content: center;
+        }
+
+        .buttons{
+            display: flex;
+            justify-content: space-between;
+        }
+
+    </style>
+    <title>Counter</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Counter</h1>
+        <h3>{{session['count']}} times</h3>
+        <div class="buttons">
+            <form action="/" method="post">
+<!-- I got this working, had to check the "check solutions because I couldn't figure out how they had it refreshing the page every click," -->
+<!-- The <a> tag makes sense once I saw it I just wouldn't have thought to do it that way on my own -->
+                <a href="/" type="button" class="btn" style="background-color: aqua;">Click</a> 
+            </form>
+            <form action="/destroy_session" method="post">
+                <a href="/destroy_session" type="button" class="btn" style="background-color: red;">Reset</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

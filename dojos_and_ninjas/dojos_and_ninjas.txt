@@ -1,0 +1,15 @@
+INSERT INTO dojos(name) VALUES ("Taekwon Dojo"), ("Karate Dojo"), ("Coding Dojo");
+DELETE dojos FROM dojos WHERE name = ("Taekwon Dojo");
+DELETE dojos FROM dojos WHERE name = ("Karate Dojo");
+DELETE dojos FROM dojos WHERE name = ("Coding Dojo");
+SELECT * FROM dojos;
+INSERT INTO dojos(name) VALUES ("Krav Maga Dojo"), ("Capoeira Dojo"), ("Muay Thai Dojo");
+SELECT * FROM dojos;
+INSERT INTO ninjas(first_name, last_name, age, dojo_id) VALUES ("John", "Smith", 24, 1), ("John", "Smithy", 25, 1), ("John", "Smithson", 23, 1);
+INSERT INTO ninjas(first_name, last_name, age, dojo_id) VALUES ("John", "Jacob", 24, 2), ("John", "Jacobson", 25, 2), ("John", "Jacob-Jingleheimer-Schmidt", 23, 2);
+INSERT INTO ninjas(first_name, last_name, age, dojo_id) VALUES ("John", "Castov", 24, 3), ("John", "Karkov", 25, 3), ("John", "Kravinsky", 23, 3);
+SELECT * FROM ninjas WHERE dojo_id = 1;
+SELECT * FROM ninjas WHERE dojo_id = 2;
+SELECT * FROM ninjas WHERE dojo_id = 3;
+SELECT * FROM ninjas;
+SELECT * FROM ninjas WHERE id = 15;

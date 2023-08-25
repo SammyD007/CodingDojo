@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous'>
+    <title>View Recipe</title>
+
+    <!-- Custom CSS for dark mode -->
+    <style>
+        body {
+            background-color: #343a40;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+        }
+
+        label {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="/view_recipe/{{ get_recipe.id }}" method="POST">
+            <h1>View Recipe</h1>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <label class="form-control" id="name" name="name" readonly>{{ get_recipe.name }}</label>
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <label class="form-control" id="description" name="description" readonly>{{ get_recipe.description
+                    }}</label>
+            </div>
+            <div class="form-group">
+                <label for="instructions">Instructions:</label>
+                <label class="form-control" id="instructions" name="instructions" readonly>{{ get_recipe.instructions
+                    }}</label>
+            </div>
+            <div class="form-group">
+                <label for="date-made">Date Made (dd/mm/yy):</label>
+                <label class="form-control" id="date-made" name="date-made" readonly>{{ get_recipe.date_made }}</label>
+            </div>
+            <div class="form-group">
+                <label for="under-30-min">Under 30 minutes?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="under-30-min" id="yes" value="yes" readonly
+                        {{ "checked" if get_recipe.under_30_mins==1 }}>
+                    <label class="form-check-label" for="yes">Yes</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="under-30-min" id="no" value="no" readonly
+                        {{ "checked" if get_recipe.under_30_mins==0 }}>
+                    <label class="form-check-label" for="no">No</label>
+                </div>
+                <a href="/welcome" class="btn btn-primary">Home</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

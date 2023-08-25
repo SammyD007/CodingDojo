@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #343a40;
+            color: #fff;
+        }
+
+        .form-control {
+            background-color: #3d4043;
+            color: #fff;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0069d9;
+            border-color: #0062cc;
+        }
+
+        .card {
+            background-color: #343a40;
+            color: #fff;
+        }
+
+        .password-requirements {
+            margin-top: 10px;
+            color: #ffc107;
+        }
+
+        .password-requirements ul {
+            padding-left: 20px;
+        }
+
+        .password-requirements ul li {
+            list-style-type: disc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="card mt-5">
+                    <div class="card-body">
+                        <h5 class="card-title">Login</h5>
+                        <form action="/login" method="POST">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" name="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password <i
+                                        class="bi bi-exclamation-triangle-fill text-warning"></i></label>
+                                <input type="password" class="form-control" id="password" name="password">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Register</h5>
+                        <form action="/register" method="POST">
+                            <div class="mb-3">
+                                <label for="first_name" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="first_name" name="first_name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="last_name" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="last_name" name="last_name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" name="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password <i
+                                        class="bi bi-exclamation-triangle-fill text-warning"></i></label>
+                                <input type="password" class="form-control" id="password"
+                                    name="password">
+                            </div>
+                            <div class="mb-3">
+                                <label for="register_confirm_password" class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" id="register_confirm_password"
+                                    name="register_confirm_password">
+                            </div>
+                            <div class="password-requirements">
+                                <h6>Password Requirements:</h6>
+                                <ul>
+                                    <li>Between 8-15 characters long</li>
+                                    <li>Contains at least one uppercase letter (A-Z)</li>
+                                    <li>Contains at least one lowercase letter (a-z)</li>
+                                    <li>Contains at least one digit (0-9)</li>
+                                    <li>Contains at least one special character from @$!%*#?&</li>
+                                </ul>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

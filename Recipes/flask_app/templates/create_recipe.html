@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a New Recipe</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #343a40;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+        }
+
+        h1 {
+            margin-top: 0;
+            color: #fff;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            background-color: #3d4043;
+            color: #fff;
+        }
+
+        .form-check-input {
+            background-color: #3d4043;
+            color: #fff;
+        }
+
+        label {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Add a New Recipe</h1>
+
+        <form action="/submit_recipe" method="POST">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description:</label>
+                        <input type="text" class="form-control" id="description" name="description">
+                    </div>
+                    <div class="form-group">
+                        <label for="instructions">Instructions:</label>
+                        <textarea class="form-control" id="instructions" name="instructions" rows="4"></textarea>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="date_made">Date Made (YYYY-MM-DD):</label>
+                        <input type="text" class="form-control" id="date_made" name="date_made" placeholder="YYYY-MM-DD">
+                    </div>
+                    <div class="form-group">
+                        <label for="under_30_mins" name='under_30_mins'>Under 30 minutes?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="under_30_mins" id="yes" value=1>
+                            <label class="form-check-label" for="yes">Yes</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="under_30_mins" id="no" value=0>
+                            <label class="form-check-label" for="no">No</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>

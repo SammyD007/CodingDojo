@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #343a40;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+        }
+
+        h1 {
+            margin-top: 0;
+            color: #fff;
+        }
+
+        .table-container {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .table {
+            border: 1px solid #dee2e6;
+            border-collapse: collapse;
+        }
+
+        .table th,
+        .table td {
+            padding: 8px;
+            border: 1px solid #dee2e6;
+            color: #fff;
+        }
+
+        .table th {
+            background-color: #212529;
+            font-weight: bold;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0069d9;
+            border-color: #0062cc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="actions">
+            <form action="/create_recipe" method="POST">
+                <button type="submit" class="btn btn-primary">Create</button>
+            </form>
+            <form action="/logout">
+                <button type="submit" class="btn btn-primary">Logout</button>
+            </form>
+        </div>
+
+        <h1>Welcome, {{ user_name }}</h1>
+
+        <div class="table-container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Under 30</th>
+                        <th>Posted By</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for recipe in recipes %}
+                    <tr>
+                        <td>{{ recipe.name }}</td>
+                        <td>{% if recipe.under_30_mins %} Yes {% else %} No {% endif %}</td>
+                        <td>{{ recipe.first_name }} {{ recipe.last_name }} </td>
+                        <td>
+                            {% if session['user_id'] == recipe.user_id %}
+                            <a href="/view_recipe/{{ recipe.id }}">View Recipe</a>
+                            <a href="/display_edit_page/{{ recipe.id }}">Edit</a>
+                            <a href="/delete_recipe/{{ recipe.id }}">Delete</a>
+                            {% elif session['user_id'] != recipe.user_id %}
+                            <a href="/view_recipe/{{ recipe.id }}">View Recipe</a>
+                            {% endif %}
+                    {% endfor %}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
